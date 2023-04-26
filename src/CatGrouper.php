@@ -86,7 +86,7 @@ class CatGrouper {
         // Connect to DB with specified parameters
         $this->conn = new mysqli($servername, $username, $password, $dbname);
         if ($this->conn->connect_error) {
-            throw new \Exception("Connection failed: " . $conn->connect_error);
+            throw new \Exception("Connection failed: " . $this->conn->connect_error);
         }
     }
 }
